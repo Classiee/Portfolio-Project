@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Boxes Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="banner">
+        <nav>
+            <ul>
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">Projects</a></li>
+                <li><a href="#section3">Why me?</a></li>
+                <li><a href="#section4">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section" id="section1">
+        <div class="floating-box left-box1">
+        <div id="textAboutMe">
+            <h3>About me</h3>
+            <p>IT student and proud father of<br>
+                <u>four</u>, navigating the challenges<br> of academia
+                at <u>GET Academy.</u> <br>
+                <br>
+                Striving to integrate my <br>
+                passion for <u>Technology</u> <br>
+                with my responsibilites <br>
+                as a parent.
+                <br></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="section2">
+        <div class="floating-box right-box1">
+            <h3 style="color: green;">Projects</h3>
+            <a href="https://www.github.com/Classiee" style="color: green;">
+            <img src="github.png" alt="github" style="width: 250px; height: 250px;">
+            </a>
+        </div>
+    </section>
+
+    <section class="content-section" id="section3">
+        <div class="floating-box left-box2">
+            <h3>Why me?</h3>
+            <p>As an IT student and a proud father of four, I bring a unique blend of dedication, empathy, and problem-solving skills to my web design projects.</p>
+            <p>My firsthand experience in balancing academic commitments with parental responsibilities has honed my ability to manage time efficiently and work under pressure, ensuring that I meet deadlines without compromising on quality.</p>
+            <p>My passion for technology fuels my creativity and innovation in design, while my commitment to understanding user needs allows me to create websites that are not only visually appealing but also intuitive and user-friendly.</p>
+            <p>Choosing me means investing in a designer who understands the importance of every detail and strives for excellence in every project.</p>
+        </div>
+    </section>
+    
+    <section class="content-section" id="section4">
+    <div id="clickable-area">
+        <div class="floating-box right-box2">
+            <h3 style="color:black;">Contact Me</h3>
+            <div id="contact-form" class="hidden">
+                <form id="contactForm">
+                    <label for="email" style="color:black;">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject" style="color:black;">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message" style="color:black;">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">
+                    <img src="send.png" alt="send">
+                    </button>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <div id="navButtons">
+        <button id="upButton" onclick="oneUp()">
+            <img src="Up.png" alt="up">
+        </button>
+        <button id="downButton">
+            <img src="Down.png" onclick="oneDown()" alt="down">
+        </button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
